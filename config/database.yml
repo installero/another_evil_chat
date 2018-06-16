@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  template: template0
+  collation: ru_RU.UTF-8
+  ctype: ru_RU.UTF-8
+  username: bibeta
+  password: dev&betA1
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: evil_chat_development
+
+test:
+  <<: *default
+  database: evil_chat_test
+
+production:
+  <<: *default
+  database: evil_chat_production
+  username: evil_chat
+  password: <%= ENV['EVIL_CHAT_DATABASE_PASSWORD'] %>
