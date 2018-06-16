@@ -2,5 +2,8 @@
   <textarea class="message-form--input js-message-form--input" autofocus>
   </textarea>
 
-  <button class="message-form--submit js-message-form--submit">Send</button>
+  <button class="message-form--submit js-message-form--submit">
+    <%= image_tag asset_pack_path('components/message-form/static/send.png'),
+      class: "message-form--submit-image" %> Send
+  </button>
 </div>

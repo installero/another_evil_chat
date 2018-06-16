@@ -1,5 +1,6 @@
 import { sendMessage } from "client/chat";
 import "./message-form.css";
+import "./static/send.png";
 
 const form = document.querySelector(".js-message-form");
 const input = form.querySelector(".js-message-form--input");

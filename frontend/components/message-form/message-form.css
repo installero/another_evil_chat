@@ -22,7 +22,7 @@
   &--submit {
     flex: 0 1 auto;
     height: 100%;
-    padding: 12px 48px;
+    padding: 12px 48px 10px;
     background: #3f94f9;
     border: 1px solid #3f94f9;
     color: white;
@@ -39,5 +39,10 @@
     &:active {
       transform: translateY(2px);
     }
+  }
+
+  &--submit-image {
+    vertical-align: middle;
+    margin-top: -4px;
   }
 }
